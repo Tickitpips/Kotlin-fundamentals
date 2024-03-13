@@ -31,7 +31,7 @@ Problem: The program should calculate the temperatures using the formulae:
   3.	Fahrenheit to Kelvin: K = 5/9 (° F - 32) + 273.15
 Solution: Use a function to convert data of type double into a string. This is a trivial thing to do, so incorporate it as a lambda expression passed as a parameter in the function rather than defining a function for it. Within the body of the function, call the lambda expression passed as a parameter of the function previously. In the main function, call the conversion function and pass the arguments.
 
-4. Song Catalogue
+5. Song Catalogue
    
 This is a module that prints song information in a Music Player application. 
 Problem statement: The module needs a class that represents the structure of a song. The Song class must include these code elements:
@@ -40,13 +40,13 @@ Problem statement: The module needs a class that represents the structure of a s
   3.	A method that prints a song description in this format: "[Title], performed by [artist], was released in [year published]."
 Solution: Design a class with the properties as stated above as constructors. Within the class, define a method to get the play count and if the play count is greater than or equal to 1000, return a true Boolean value; else return a false Boolean value. Also, within the class define a method to print the title, the artist and the year of release. In the main function, call the class and store the values into a variable which will be used to print the song’s description and its popularity.
 
-5. Internet Profile
+6. Internet Profile
 
 This is a program that displays the profile of a user. The profile displays their name, age, hobby and referrer. 
 Problem statement: The program should display both mandatory fields and non-mandatory fields.
 Solution: Define a class with the properties set as constructors. Within the class, define a method to display the profile details of a user (Simply print the details). However, as the program prints, it should check if the values of the hobby and referrer are null. Achieve this through conditionals. 
 
-6. Foldable Phones
+7. Foldable Phones
 
 This is a module to turn on the screen of a foldable phone only when it is not folded. 
 Problem statement: Typically, a phone screen turns on and off when the power button is pressed. In contrast, if a foldable phone is folded, the main inner screen on a foldable phone doesn't turn on when the power button is pressed.
@@ -56,7 +56,7 @@ In the initial code provided in the following code snippet, write a FoldablePhon
   3.	Methods to change the folding state.
 Solution: The phone parent class has already been defined. Just ensure it is open so that its attributes can be inherited later. Pass a Boolean variable as a constructor in the phone class to store the state of the screen (on/off). Define methods to change the Boolean values of the screen when the phone is switched on and off. In the child class, pass a Boolean value in the constructor to store the state of the phone (folded/unfolded). Override the switchOn() method in the child class to include a conditional that checks if the phone is folded. Define two methods that change the values of the Boolean folded state of the phone. Create instances of these classes in the main function.
 
-7. Special Auction
+8. Special Auction
 
 This program returns the price of an item based on the bids at an auction.
 Problem statement: Typically in an auction, the highest bidder determines the price of an item. In a special auction, if there's no bidder for an item, the item is automatically sold to the auction house at the minimum price. The program should determine whether there is a bidder for an item and if there isn’t, the item should be sold at its minimum price. 
